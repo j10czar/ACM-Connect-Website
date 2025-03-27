@@ -8,18 +8,18 @@ export default function palette() {
 
   const lightPalette = {
     primary: {
-      lighter: '#CCE5FF', // AI/primary/90 - primary container / primary fixed
-      light: '#92CCFF', // AI/primary/80 - primary fixed dim
-      main: '#006397', // AI/primary/40 - primary
-      dark: '#004B73', // AI/primary/30 - on primary fixed variant
-      darker: '#001D31' // AI/primary/10 - on primary container / on primary fixed
+      lighter: '#BECEFD', // AI/primary/90 - primary container / primary fixed
+      light: '#698FFF', // AI/primary/80 - primary fixed dim
+      main: '#4C79FF', // AI/primary/40 - primary
+      dark: '#3C6DFF', // AI/primary/30 - on primary fixed variant
+      darker: '#2B4799' // AI/primary/10 - on primary container / on primary fixed
     },
     secondary: {
-      lighter: '#D3E4F8', // AI/secondary/90 - secondary container / secondary fixed
-      light: '#B7C8DB', // AI/secondary/80 - secondary fixed dim
-      main: '#4F6070', // AI/secondary/40 - secondary
-      dark: '#384858', // AI/secondary/30 - on secondary fixed variant
-      darker: '#0B1D2B' // AI/secondary/10 - on secondary container / on secondary fixed
+      lighter: '#FFDEBA', // AI/secondary/90 - secondary container / secondary fixed
+      light: '#FFCC96', // AI/secondary/80 - secondary fixed dim
+      main: '#FFB96E', // AI/secondary/40 - secondary
+      dark: '#FFA84C', // AI/secondary/30 - on secondary fixed variant
+      darker: '#FF9A2D' // AI/secondary/10 - on secondary container / on secondary fixed
     },
     grey: {
       50: '#F9F9FC', // AI/neutral/98 - surface / surface bright

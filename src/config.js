@@ -1,5 +1,5 @@
 // @next
-import { Archivo, Figtree, Roboto } from 'next/font/google';
+import { Archivo, Figtree, Roboto, Poppins} from 'next/font/google';
 
 export let Themes;
 
@@ -26,7 +26,11 @@ export default config;
 const fontRobot = Roboto({ subsets: ['latin'], weight: ['100', '300', '400', '500', '700', '900'] });
 const fontArchivo = Archivo({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
 const fontFigtree = Figtree({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
+const fontPoppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'], // Adjust weights as needed
+}); 
 
 export const FONT_ROBOTO = fontRobot.style.fontFamily;
-export const FONT_ARCHIVO = fontArchivo.style.fontFamily;
-export const FONT_FIGTREE = fontFigtree.style.fontFamily;
+export const FONT_ARCHIVO = fontPoppins.style.fontFamily;
+export const FONT_FIGTREE = fontPoppins.style.fontFamily;
