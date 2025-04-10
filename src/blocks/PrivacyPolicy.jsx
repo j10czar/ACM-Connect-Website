@@ -60,10 +60,10 @@ function useScrollspy(ids, offset = 0) {
 
 const menuItems = [
   {
-    id: 'acceptance-of-terms',
-    heading: 'Acceptance of Terms',
+    id: 'introduction',
+    heading: 'Introduction',
     caption:
-      'By accessing and using this website, you agree to be bound by these Terms and Conditions of Use. If you do not agree with any part of these terms, you must not use the website. shares information about you when you use our website or services. By accessing or using our website, you consent to the practices described in this policy.'
+      'ACM Connect is a Discord bot designed to notify students about internship opportunities. This privacy policy explains what information we collect, how it’s used, and your rights regarding your data.'
   },
   {
     id: 'changes-to-terms',
@@ -81,37 +81,49 @@ const menuItems = [
     id: 'intellectual-property',
     heading: 'Intellectual Property',
     caption:
-      'All content on this website, including but not limited to text, graphics, logos, images, audio clips, video clips, digital downloads, and data compilations, is the property of [Your Company Name] or its content suppliers and protected by international copyright laws.'
+      'All content on this website, including but not limited to text, graphics, logos, images, audio clips, video clips, digital downloads, and data compilations, is the property of UF ACM or its content suppliers and protected by international copyright laws.'
   },
   {
-    id: 'privacy-policy',
-    heading: 'Privacy Policy',
+    id: 'information-we-collect',
+    heading: 'Information We Collect',
     caption:
-      'We do not sell, trade, or otherwise transfer your personal information to third parties. We may share information with trusted service providers who assist us in operating our website, conducting our business, or servicing you.'
+      'The only information collected by ACM Connect is the Discord server ID, channel ID, and role ID used during bot setup. We do not collect any personal user data or messages.'
   },
   {
-    id: 'user-generated-content',
-    heading: 'User-Generated Content',
+    id: 'information-use',
+    heading: 'How We Use Your Information',
     caption:
-      'If you submit any material to this website, you grant [Your Company Name] a perpetual, royalty-free, worldwide license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such material.'
+      'This information is used exclusively to deliver internship alerts to the correct server channel and role. It allows the bot to function as intended within your community.'
   },
   {
-    id: 'limitation-of-liability',
-    heading: 'Limitation of Liability',
+    id: 'data-sharing',
+    heading: 'Data Sharing',
     caption:
-      'In no event shall [Your Company Name] or its affiliates be liable for any direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use this website.'
+      'ACM Connect is hosted on Amazon Web Services (AWS), and your data is securely stored and processed through their infrastructure. No data is sold or shared with third parties beyond what is required for hosting and bot operations.'
   },
   {
-    id: 'indemnity',
-    heading: 'Indemnity',
+    id: 'data-retention',
+    heading: 'Data Retention',
     caption:
-      "You agree to indemnify and hold harmless [Your Company Name] and its affiliates from any claims, actions, demands, damages, liabilities, costs, or expenses, including reasonable attorneys' fees, arising out of or related to your use of the website or any violation of these terms."
+      "Data is stored only while ACM Connect remains active in your server. Once the bot is removed, all related data is automatically deleted."
   },
   {
-    id: 'governing-law',
-    heading: 'Governing Law',
+    id: 'security',
+    heading: 'Security',
     caption:
-      'These terms are governed by and construed in accordance with the laws of [Your Country/State], without regard to its conflict of law principles.'
+      'Access control measures are in place to protect server data and prevent unauthorized access.'
+  },
+  {
+    id: 'user-rights',
+    heading: 'User Rights',
+    caption:
+      'If you would like your servers data to be manually deleted, you may request removal at any time by submitting a request through the Feedback & Bug Report Form.'
+  },
+  {
+    id: 'contact-info',
+    heading: 'Contact Information',
+    caption:
+      'For any questions or concerns about this policy, please use the Feedback & Bug Report Form to get in touch with our team.'
   }
 ];
 

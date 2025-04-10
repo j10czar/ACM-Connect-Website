@@ -38,8 +38,8 @@ export const cta4 = {
 function DescriptionLine() {
   return (
     <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-      Have questions? Our community is here to help. Learn more about{' '}
-      <Link component={NextLink} variant="caption2" color="primary" href={branding.company.socialLink.discord} underline="hover">
+      Have questions? ACM is here to help. Learn more about{' '}
+      <Link component={NextLink} variant="caption2" color="primary" href="https://uf-acm.com/" underline="hover">
         our community
       </Link>
     </Typography>
@@ -47,26 +47,22 @@ function DescriptionLine() {
 }
 
 export const cta5 = {
-  label: 'Join the Community',
+  label: '🐊 ACM at Univeristy of Florida',
   heading: 'Connect with us on Discord',
   caption: 'Get support, share insights, and grow together.',
   primaryBtn: {
     children: 'Join Discord Community',
-    href: branding.company.socialLink.discord,
+    href: "https://discord.gg/wcYxbcgbVN",
     target: '_blank',
     rel: 'noopener noreferrer'
   },
   description: <DescriptionLine />,
-  saleData: { count: 8, defaultUnit: 'k+', caption: 'Trusted by professionals worldwide' },
+  saleData: { count: 2.2, defaultUnit: 'k+', caption: 'Members' },
   profileGroups: {
-    avatarGroups: [
-      { avatar: '/assets/images/user/avatar1.png' },
-      { avatar: '/assets/images/user/avatar2.png' },
-      { avatar: '/assets/images/user/avatar3.png' },
-      { avatar: '/assets/images/user/avatar4.png' },
-      { avatar: '/assets/images/user/avatar5.png' }
+    avatarGroups: [ 
+      { avatar: '/assets/images/user/ConnectLogo.png' }
     ],
-    review: '250k+ Reviews (4.65 out of 5)'
+    review: 'Created by UF ACM Design Team'
   }
 };
 

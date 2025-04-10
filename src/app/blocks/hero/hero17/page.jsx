@@ -29,8 +29,8 @@ const data = {
       </>
     )
   },
-  headLine: 'Real-time Performance Monitoring',
-  captionLine: 'Identify and resolve issues proactively for uninterrupted operations.',
+  headLine: 'Blah',
+  captionLine: 'blach',
   primaryBtn: { children: 'Try Predictive Cost Analytics' },
   videoSrc: 'https://d2elhhoq00m1pj.cloudfront.net/saasable-intro.mp4',
   videoThumbnail: '/assets/videos/thumbnails/intro-thumbnail.png',

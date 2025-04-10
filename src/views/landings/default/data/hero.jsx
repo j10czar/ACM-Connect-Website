@@ -9,40 +9,30 @@ export const hero = {
     label: (
       <>
         <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-          One Kit, Endless
+          Created by
         </Typography>
         <Chip
           label={
             <Typography variant="caption" sx={{ color: 'primary.main' }}>
-              Possibilities
+              🐊 ACM at Univeristy of Florida
             </Typography>
           }
-          sx={{ height: 24, bgcolor: 'primary.lighter', mr: -1, ml: 0.75, '& .MuiChip-label': { px: 1.25 } }}
-          icon={
-            <CardMedia
-              component="img"
-              image="/assets/images/shared/celebration.svg"
-              sx={{ width: 16, height: 16 }}
-              alt="celebration"
-              loading="lazy"
-            />
-          }
+          sx={{ height: 24, bgcolor: 'primary.lighter', mr: -1, ml: 0.75, '& .MuiChip-label': { px: 1.25 } }} 
         />
       </>
     )
   },
-  headLine: 'Multipurpose UI Kit and Dashboard Template',
-  captionLine: 'Design marketing pages and powerful admin dashboards with ease using our UI Kit, built following Material 3 guidelines.',
-  primaryBtn: { children: 'Explore Blocks', href: SECTION_PATH },
-  videoSrc: 'https://d2elhhoq00m1pj.cloudfront.net/saasable-intro.mp4',
-  videoThumbnail: '/assets/videos/thumbnails/intro-thumbnail.png',
+  headLine: 'An Internship Solution for Students by Students',
+  captionLine: 'ACM Connect is a Discord bot that instantly notifies students about the latest internship opportunities, helping them stay ahead in their career search.',
+  primaryBtn: { children: 'Get Started', href: "https://airtable.com/appHWEk24suVUfw7b/pag7ZEEWc97aHfmEp/form" },
+  //videoSrc: 'https://d2elhhoq00m1pj.cloudfront.net/saasable-intro.mp4',
+  videoThumbnail: '/assets/videos/thumbnails/Promo.png',
   listData: [
-    { image: '/assets/images/shared/react.svg', title: 'React 18' },
+    { image: '/assets/images/shared/react.svg', title: 'React' },
     { image: '/assets/images/shared/next-js.svg', title: 'Next.js' },
-    { image: '/assets/images/shared/material-ui.svg', title: 'Material UI v6' },
+    { image: '/assets/images/shared/aws.png', title: 'Amazon AWS' },
     { image: '/assets/images/shared/typescript.svg', title: 'TypeScript' },
-    { image: '/assets/images/shared/javascript.svg', title: 'JavaScript' },
-    { image: '/assets/images/shared/m3.svg', title: 'Material 3' },
+    { image: '/assets/images/shared/python.png', title: 'Python' },
     { image: '/assets/images/shared/figma.svg', title: 'Figma' }
   ]
 };
