@@ -160,41 +160,26 @@ export const feature10 = {
   }
 };
 
+//edit the blocks here
 export const feature20 = {
-  heading: 'Comprehensive UI Kit Tailored to your Need',
-  caption: 'Ready to transform your SaaS designs with one powerful UI Kit?',
-  actionBtn: { children: 'Buy Now', href: BUY_NOW_URL, ...linkProps },
-  secondaryBtn: { children: 'Explore Blocks', href: SECTION_PATH },
+  heading: 'Features',
+  caption: 'Ready to try it out?',
+  actionBtn: { children: 'Get Started', href: "https://airtable.com/appHWEk24suVUfw7b/pag7ZEEWc97aHfmEp/form", ...linkProps }, 
   features: [
     {
       icon: 'tabler-accessible',
-      title: 'WCAG Compliant',
-      content: 'Ensure accessibility with WCAG compliant design for browsing.'
-    },
-    {
-      icon: 'tabler-brand-google',
-      title: 'SEO Friendly',
-      content: 'Boost visibility with SEO-friendly features for better search rankings.'
-    },
-    {
-      icon: 'tabler-stack-2',
-      title: 'MUI Components',
-      content: 'Customize Material 3 design MUI components for enhanced aesthetics.'
+      title: 'Student-Built',
+      content: 'Created by students who understand the internship grind.'
     },
     {
       icon: 'tabler-rocket',
-      title: 'High Performance UI',
-      content: 'Adjust content layout for visual coherence on various screen sizes.'
+      title: 'Easy Integration',
+      content: 'Get started in just a few clicks with a hassle-free installation process.'
     },
     {
-      icon: 'tabler-help',
-      title: 'Detailed Documentation',
-      content: 'Access comprehensive documentation for easy guidance on platform usage.'
-    },
-    {
-      icon: 'tabler-refresh',
-      title: 'Regular Updates',
-      content: 'Receive consistent updates to keep the platform secure and up-to-date with the latest features.'
+      icon: 'tabler-stack-2',
+      title: 'Role-Based Filtering',
+      content: 'Target opportunities by role, location, or experience level.'
     }
   ]
 };
@@ -228,7 +213,7 @@ export const feature21 = {
     {
       animationDelay: 0.4,
       icon: 'tabler-accessible',
-      title: 'WCAG Compliant'
+      title: 'ACM Compliant'
     },
     {
       animationDelay: 0.1,

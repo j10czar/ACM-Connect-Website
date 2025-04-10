@@ -3,30 +3,23 @@ import SvgIcon from '@/components/SvgIcon';
 import { DOCS_URL } from '@/path';
 
 export const integration = {
-  headLine: 'Tailored for Every Industry',
-  captionLine: 'From Project Management to AI, see how our UI Kit helps you build SaaS applications tailored for a variety of industries.',
+  headLine: 'Credits',
+  captionLine: 'Meet the team that made this amazing project possible.',
   primaryBtn: {
-    children: 'Documentation',
+    children: 'Learn more',
     startIcon: <SvgIcon name="tabler-help" color="background.default" />,
     href: DOCS_URL,
     target: '_blank',
     rel: 'noopener noreferrer'
   },
   tagList: [
-    { label: 'Project Management' },
-    { label: 'Customer Relationship Management CRM' },
-    { label: 'HR & Recruitment' },
-    { label: 'Finance & Accounting' },
-    { label: 'E-commerce Solutions' },
-    { label: 'Marketing Automation' },
-    { label: 'Healthcare & Telemedicine' },
-    { label: 'LMS' },
-    { label: 'AI & ML Platforms' },
-    { label: 'Inventory & Supply Chain Management' },
-    { label: 'Customer Support & Help Desk' },
-    { label: 'Email Marketing and SEO Tools' },
-    { label: 'Networking Platforms' },
-    { label: 'Blogging Tools' },
-    { label: 'Data Analytics & Business Intelligence' }
+    { label: 'Jason Tenczar' },
+    { label: 'Alex Fisher' },
+    { label: 'Steve Sajeev' },
+    { label: 'Tanmay Saxena' },
+    { label: 'Devan Parketh' },
+    { label: 'Mukul Vinoid' },
+    { label: 'Jacob Frankel' },
+    
   ]
 };
