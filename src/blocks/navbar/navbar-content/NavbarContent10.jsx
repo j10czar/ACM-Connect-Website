@@ -26,7 +26,7 @@ export default function NavbarContent10({ navItems, primaryBtn, secondaryBtn }) 
     <Stack direction="row" sx={{ alignItems: 'center', justifyContent: 'space-between', width: 1 }}>
       <Logo />
       {!downMD && navItems && (
-        <Box sx={{ bgcolor: 'grey.200', borderRadius: 10 }}>
+        <Box sx={{ bgcolor: 'grey.200', borderRadius: 10, display: 'flex', alignItems: 'center' }}>
           <NavMenu {...{ navItems }} />
         </Box>
       )}

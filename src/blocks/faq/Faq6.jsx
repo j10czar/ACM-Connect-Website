@@ -60,7 +60,7 @@ export default function Faq6({ heading, caption, defaultExpanded, faqList, getIn
   };
 
   return (
-    <ContainerWrapper sx={{ py: SECTION_COMMON_PY }}>
+    <ContainerWrapper id="faq-section" sx={{ py: SECTION_COMMON_PY }}>
       <Stack sx={{ gap: { xs: 3, sm: 4 } }}>
         <motion.div
           initial={{ opacity: 0, y: 10 }}

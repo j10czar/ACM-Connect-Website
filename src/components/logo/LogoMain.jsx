@@ -12,12 +12,12 @@ import branding from '@/branding.json';
 
 export default function LogoMain() {
   const theme = useTheme();
-  const logoMainPath = '/assets/images/Component 3.svg'  
+  const logoMainPath = '/assets/images/Instagram post - 3.png'  
 
 
 
   return logoMainPath ? (
-    <CardMedia src={logoMainPath} component="img" alt="logo" sx={{ width: { xs: 112, lg: 140 } }} loading="lazy" />
+    <CardMedia src={logoMainPath} component="img" alt="logo" sx={{ width: { xs: 82, lg: 70 } }} loading="lazy" />
   ) : (
     <Box
       className="icon-logo"
