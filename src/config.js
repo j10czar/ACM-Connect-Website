@@ -24,8 +24,8 @@ export default config;
 /***************************  THEME - FONT FAMILY  ***************************/
 
 const fontRobot = Roboto({ subsets: ['latin'], weight: ['100', '300', '400', '500', '700', '900'] });
-const fontArchivo = Archivo({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
-const fontFigtree = Figtree({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
+// const fontArchivo = Archivo({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
+// const fontFigtree = Figtree({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
 const fontPoppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'], // Adjust weights as needed
