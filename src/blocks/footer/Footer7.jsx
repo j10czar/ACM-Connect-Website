@@ -25,6 +25,7 @@ import SvgIcon from '@/components/SvgIcon';
 
 import { CopyrightType } from '@/enum';
 import { DOCS_URL } from '@/path'; 
+import { PAGE_PATH } from '@/path';
 // import { FREEBIES_URL } from '@/path'; //  
 import { SECTION_COMMON_PY } from '@/utils/constant';
 
@@ -115,7 +116,12 @@ const usefullLinks = [
   {
     icon: <SvgIcon name="tabler-sparkles" {...iconProps} />,
     title: 'Documentation',
-    href: DOCS_URL
+     href: DOCS_URL
+  },
+  {
+    icon: <SvgIcon name="tabler-shield-lock" {...iconProps} />,
+    title: 'Privacy Policy',
+    href: PAGE_PATH.privacyPolicyPage
   }
 ];
 
@@ -200,6 +206,7 @@ export default function Footer7() {
             <Stack
               direction={{ xs: 'column', sm: 'row' }} 
               sx={{
+                width: 1,
                 alignItems: 'center',
                 justifyContent: 'space-between', 
                 gap: { xs: 2, sm: 1.5 },
@@ -207,9 +214,10 @@ export default function Footer7() {
                 px: { xs: 2, sm: 3 }
               }}
             >
-               <Stack direction="row" justifyContent="space-between" alignItems="center"> 
-             <LogoSection sx={{ height: 'auto' }} /> 
-          </Stack>
+              <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{width: {xs: 1, sm: 'auto'}}}>
+                <LogoSection sx={{ height: 'auto' }} />
+              </Stack>
+
               <Copyright type={CopyrightType.TYPE3} />
 
               <Stack direction="row" spacing={2} alignItems="center">
@@ -226,6 +234,21 @@ export default function Footer7() {
                     }}
                   >
                     <SvgIcon name="tabler-book" {...iconProps} />
+                  </Link>
+
+                  <Link
+                    component={NextLink}
+                    href={PAGE_PATH.privacyPolicyPage}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Privacy Policy"
+                    sx={{
+                      lineHeight: 0,
+                      color: 'text.secondary',
+                      '&:hover': { color: 'text.primary' }
+                    }}
+                  >
+                    <SvgIcon name="tabler-shield-lock" {...iconProps} />
                   </Link>
 
                  <Link

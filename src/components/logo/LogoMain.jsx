@@ -12,7 +12,7 @@ import branding from '@/branding.json';
 
 export default function LogoMain() {
   const theme = useTheme();
-  const logoMainPath = '/assets/images/Instagram post - 3.png'  
+  const logoMainPath = '/assets/images/shared/ACMConnect-icon.png'  
 
 
 

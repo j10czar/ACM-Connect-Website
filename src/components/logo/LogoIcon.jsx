@@ -12,7 +12,7 @@ import Box from '@mui/material/Box';
 
 export default function LogoIcon() {
   const theme = useTheme();
-  const myLogoImagePath = '/assets/images/Instagram post - 3.png'
+  const myLogoImagePath = '/assets/images/shared/ACMConnect-icon.png'
 
   return (
     <Box
