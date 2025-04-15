@@ -18,12 +18,12 @@
     },
     primaryBtn: { children: 'Get Started', href: 'https://airtable.com/appHWEk24suVUfw7b/pag7ZEEWc97aHfmEp/form', ...linkProps },
     navItems: [   
-      { id: 'home', title: 'Home', link: '/' },
+      // { id: 'home', title: 'Home', link: '/' },
       // landingMegamenu,
       // { id: 'components', title: 'Blocks', link: SECTION_PATH },
       // { id: 'dashboard', title: 'Dashboard', link: ADMIN_PATH, ...linkProps },
       // pagesMegamenu,
-      { id: 'docs', title: 'Docs', link: DOCS_URL, ...linkProps, icon: 'tabler-pin-invoke' },
-      { id: 'faqs', title: 'FAQs', link: '#faq-section' }
+      // { id: 'docs', title: 'Docs', link: DOCS_URL, ...linkProps, icon: 'tabler-pin-invoke' },
+      // { id: 'faqs', title: 'FAQs', link: '#faq-section' }
     ]
   }; 
