@@ -4,30 +4,35 @@
 import NextLink from 'next/link';
 
 // @mui
-import Grid from '@mui/material/Grid2';
+// import Grid from '@mui/material/Grid2'; 
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import Typography from '@mui/material/Typography';
+// import Typography from '@mui/material/Typography';  
 
 // @third-party
 import { motion } from 'framer-motion';
 
 // @project
-import branding from '@/branding.json';
-import { GraphicsCard } from '@/components/cards';
+import branding from '@/branding.json'; 
+import { GraphicsCard } from '@/components/cards'; 
 import ContainerWrapper from '@/components/ContainerWrapper';
-import { Copyright, FollowUS, Sitemap } from '@/components/footer';
-import LogoSection from '@/components/logo';
-import SvgIcon from '@/components/SvgIcon';
+// import { Copyright, FollowUS, Sitemap } from '@/components/footer';    FollowUS, Sitemap
+import { Copyright } from '@/components/footer';
+// import FollowUS from '@/components/footer/FollowUs';
+// import Sitemap from '@/components/footer/Sitemap'; 
+import LogoSection from '@/components/logo'; 
+import SvgIcon from '@/components/SvgIcon'; 
 
 import { CopyrightType } from '@/enum';
-import { DOCS_URL, FREEBIES_URL } from '@/path';
+import { DOCS_URL } from '@/path'; 
+import { PAGE_PATH } from '@/path';
+// import { FREEBIES_URL } from '@/path'; //  
 import { SECTION_COMMON_PY } from '@/utils/constant';
 
 // @types
 
-/***************************  FOOTER - 7 DATA  ***************************/
-
+/***************************  FOOTER - 7 DATA ( ) ***************************/
+/*
 const linkProps = { target: '_blank', rel: 'noopener noreferrer' };
 const data = [
   {
@@ -103,30 +108,29 @@ const data = [
     ]
   }
 ];
+*/
 
-const iconProps = { color: 'text.secondary' };
+const iconProps = { color: 'text.secondary', size: 24 }; 
 
 const usefullLinks = [
   {
-    icon: <SvgIcon name="tabler-brand-figma" {...iconProps} />,
-    title: 'Figma Version 1.0.0',
-    href: 'https://www.figma.com/community/file/1425095061180549847'
-  },
-  {
-    icon: <SvgIcon name="tabler-route" {...iconProps} />,
-    title: 'React Material UI v6.1.4',
-    href: 'https://mui.com/material-ui/getting-started'
-  },
-  {
     icon: <SvgIcon name="tabler-sparkles" {...iconProps} />,
     title: 'Documentation',
-    href: DOCS_URL
+     href: DOCS_URL
+  },
+  {
+    icon: <SvgIcon name="tabler-shield-lock" {...iconProps} />,
+    title: 'Privacy Policy',
+    href: PAGE_PATH.privacyPolicyPage
   }
 ];
 
-/***************************  FOOTER - 7  ***************************/
+/***************************  FOOTER - 7 ***************************/
 
 export default function Footer7() {
+  const instagramUrl = branding.company.socialLink.instagram || '#'; 
+
+  /* //   
   const logoFollowContent = (
     <Stack sx={{ alignItems: 'flex-start', gap: { xs: 1.5, sm: 3 } }}>
       <LogoSection />
@@ -138,10 +142,12 @@ export default function Footer7() {
       </Typography>
     </Stack>
   );
+  */
 
   return (
     <ContainerWrapper sx={{ py: SECTION_COMMON_PY }}>
-      <Stack id="footer-7" role="contentinfo" rel="noopener noreferrer" aria-label="Footer 7" sx={{ gap: { xs: 3, sm: 4, md: 5 } }}>
+      <Stack id="footer-7" role="contentinfo" aria-label="Footer 7" sx={{ gap: { xs: 3, sm: 4, md: 5 } }}>
+        {/* --- Top Section (Logo Only) --- */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -151,12 +157,17 @@ export default function Footer7() {
             delay: 0.4
           }}
         >
+          {/* <Stack direction="row" justifyContent="space-between" alignItems="center"> Adjust layout */}
+             {/* <LogoSection sx={{ height: 'auto' }} /> Ensure logo scales */}
+          {/* </Stack> */}
+
+          {/*
           <Grid container spacing={{ xs: 4, md: 3 }}>
             <Grid size={{ xs: 12, md: 6 }}>
               <Stack direction={{ sm: 'row', md: 'column' }} sx={{ gap: 3, justifyContent: 'space-between', height: 1 }}>
-                {logoFollowContent}
+                {logoFollowContent} // Original logo/text section
                 <Stack sx={{ gap: { xs: 2, sm: 2.5, md: 3 } }}>
-                  {usefullLinks.map((item, index) => (
+                  {usefullLinks.map((item, index) => ( // Original useful links rendering
                     <Stack direction="row" sx={{ gap: 1, alignItems: 'center' }} key={index}>
                       {item.icon}
                       <Link
@@ -176,32 +187,86 @@ export default function Footer7() {
               </Stack>
             </Grid>
             <Grid size={{ xs: 12, md: 6 }}>
-              <Sitemap list={data} isMenuDesign />
+              <Sitemap list={data} isMenuDesign /> // Original Sitemap
             </Grid>
           </Grid>
+          */}
         </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{
             duration: 0.5,
-            delay: 0.4
+            delay: 0.4 
           }}
         >
           <GraphicsCard sx={{ borderRadius: { xs: 6, sm: 8 } }}>
             <Stack
-              direction={{ sm: 'row' }}
+              direction={{ xs: 'column', sm: 'row' }} 
               sx={{
+                width: 1,
                 alignItems: 'center',
-                justifyContent: { xs: 'center', sm: 'space-between' },
-                gap: 1.5,
+                justifyContent: 'space-between', 
+                gap: { xs: 2, sm: 1.5 },
                 py: { xs: 2, sm: 1.5 },
                 px: { xs: 2, sm: 3 }
               }}
             >
+              <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{width: {xs: 1, sm: 'auto'}}}>
+                <LogoSection sx={{ height: 'auto' }} />
+              </Stack>
+
               <Copyright type={CopyrightType.TYPE3} />
-              <FollowUS heading={false} color="grey.100" />
+
+              <Stack direction="row" spacing={2} alignItems="center">
+                 <Link
+                    component={NextLink}
+                    href={DOCS_URL} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Documentation"
+                    sx={{
+                      lineHeight: 0, 
+                      color: 'text.secondary',
+                      '&:hover': { color: 'text.primary' }
+                    }}
+                  >
+                    <SvgIcon name="tabler-book" {...iconProps} />
+                  </Link>
+
+                  <Link
+                    component={NextLink}
+                    href={PAGE_PATH.privacyPolicyPage}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Privacy Policy"
+                    sx={{
+                      lineHeight: 0,
+                      color: 'text.secondary',
+                      '&:hover': { color: 'text.primary' }
+                    }}
+                  >
+                    <SvgIcon name="tabler-shield-lock" {...iconProps} />
+                  </Link>
+
+                 <Link
+                    component={NextLink}
+                    href={instagramUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit our Instagram page"
+                    sx={{
+                      lineHeight: 0, 
+                      color: 'text.secondary',
+                      '&:hover': { color: 'text.primary' }
+                    }}
+                  >
+                    <SvgIcon name="tabler-brand-instagram" {...iconProps} />
+                  </Link>
+              </Stack>
+
             </Stack>
           </GraphicsCard>
         </motion.div>

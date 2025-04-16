@@ -13,6 +13,7 @@ import { generateFocusVisibleStyles } from '@/utils/CommonFocusStyle';
 import LogoMain from './LogoMain';
 import LogoIcon from './LogoIcon';
 
+
 /***************************  MAIN - LOGO  ***************************/
 
 export default function LogoSection({ isIcon, sx, to }) {
