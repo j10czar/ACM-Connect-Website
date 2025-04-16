@@ -11,6 +11,7 @@ import { NavbarContent10 } from '@/blocks/navbar/navbar-content';
 
 import useScrollPosition from '@/hooks/useScrollPosition';
 import useDataThemeMode from '@/hooks/useDataThemeMode';
+import { Analytics } from '@vercel/analytics/next';
 
 // @data
 import { navbar } from './data';
@@ -33,6 +34,7 @@ export default function MainLayout({ children }) {
       </Box>
       {/* app/(landing)/* */}
       {children}
+      <Analytics />
       {/* footer section */}
       <Footer7 />
     </>
