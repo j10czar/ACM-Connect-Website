@@ -17,7 +17,7 @@ export const integration = {
     { label: 'Alex Fisher' },
     { label: 'Steve Sajeev' },
     { label: 'Tanmay Saxena' },
-    { label: 'Devan Parketh' },
+    { label: 'Devan Parekh' },
     { label: 'Mukul Vinoid' },
     { label: 'Jacob Frankel' },
     
