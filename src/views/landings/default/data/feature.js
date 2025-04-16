@@ -1,7 +1,7 @@
 // @project
 import branding from '@/branding.json';
 import { IconType } from '@/enum';
-import { SECTION_PATH, BUY_NOW_URL, ADMIN_PATH, DOCS_URL } from '@/path';
+import {BUY_NOW_URL, ADMIN_PATH, DOCS_URL } from '@/path';
 
 const linkProps = { target: '_blank', rel: 'noopener noreferrer' };
 

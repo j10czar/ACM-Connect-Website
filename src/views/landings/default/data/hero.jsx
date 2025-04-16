@@ -2,7 +2,6 @@
 import CardMedia from '@mui/material/CardMedia';
 import Chip from '@mui/material/Chip';
 import Typography from '@mui/material/Typography';
-import { SECTION_PATH } from '@/path';
 
 export const hero = {
   chip: {

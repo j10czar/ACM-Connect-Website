@@ -1,5 +1,5 @@
 // @next
-import { Archivo, Figtree, Roboto, Poppins} from 'next/font/google';
+import {Roboto, Poppins} from 'next/font/google';
 
 export let Themes;
 
