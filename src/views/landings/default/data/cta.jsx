@@ -47,7 +47,7 @@ function DescriptionLine() {
 }
 
 export const cta5 = {
-  label: '🐊 ACM at Univeristy of Florida',
+  label: '🐊 ACM at University of Florida',
   heading: 'Connect with us on Discord',
   caption: 'Get support, share insights, and grow together.',
   primaryBtn: {

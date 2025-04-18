@@ -13,7 +13,7 @@ export const hero = {
         <Chip
           label={
             <Typography variant="caption" sx={{ color: 'primary.main' }}>
-              🐊 ACM at Univeristy of Florida
+              🐊 ACM at University of Florida
             </Typography>
           }
           sx={{ height: 24, bgcolor: 'primary.lighter', mr: -1, ml: 0.75, '& .MuiChip-label': { px: 1.25 } }} 
